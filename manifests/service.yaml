@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: autodeploy52
+  namespace: namespace-workflow-1714014308794
+spec:
+  type: LoadBalancer
+  selector:
+    app: autodeploy52
+  ports:
+    - protocol: TCP
+      port: 5000
+      targetPort: 5000
